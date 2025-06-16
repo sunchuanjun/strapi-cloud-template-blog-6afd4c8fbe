@@ -15,9 +15,8 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "text",
-      "maxLength": 80
+    "content": {
+      "type": "text"
     },
     "category": {
       "type": "relation",
@@ -25,8 +24,8 @@
       "target": "api::category.category",
       "inversedBy": "articles"
     },
-    "src": {
-      "type": "text"
+    "resource": {
+      "type": "json"
     }
   }
 }
